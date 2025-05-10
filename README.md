@@ -1,10 +1,11 @@
-# Wolf_PJ_PIF
+
+# Wolf\_PJ\_PIF
 
 # 🧠 Integrantes do Projeto
 
-- Leonardo Felipe Demétrio Lins Nascimento 
-- Jonas de Lima Neto
-- João Eduardo Monteiro Cavalcanti
+* Leonardo Felipe Demétrio Lins Nascimento
+* Jonas de Lima Neto
+* João Eduardo Monteiro Cavalcanti
 
 ---
 
@@ -20,71 +21,87 @@
 
 ---
 
-# 🎮 Nome do Jogo
+# 💣 Nome do Jogo
 
-**Tetrimino++**
+**OneMine--**
 
 ---
 
 # ⚙️ Como Compilar e Executar o Jogo
 
 ### ✅ Pré-requisitos
-- Sistema operacional: **Linux** ou **macOS**
-- Compilador: `gcc`
-- Biblioteca: **CLI-lib** incluída no projeto (`src/cli-lib`)
 
+* Sistema operacional: **Linux** ou **macOS**
+* Compilador: `gcc`
+* Biblioteca: **CLI-lib** incluída no projeto (`src/cli-lib`)
 
 ### 🛠️ Compilação
+
 Manualmente:
 
-No Terminal: gcc -o tetris src/*.c -Iinclude
+```bash
+gcc -o campo-minado src/*.c -Iinclude
+```
 
-▶️ Execução
+### ▶️ Execução
 
-./tetris
+```bash
+./campo-minado
+```
 
-# 🎮 Tetrimino++
+---
 
-**Tetrimino++** é uma versão aprimorada do clássico Tetris, desenvolvida inteiramente em linguagem **C** com uso da biblioteca **CLI-lib**. O jogo é executado no terminal e traz inovações como **peças com poderes especiais**, **ranking com nome do jogador** e **efeitos visuais com texto e cores**.
+# 💣 Campo Minado++
+
+**Campo Minado++** é uma versão interativa do clássico jogo de lógica, criada em linguagem **C** com suporte à biblioteca **CLI-lib**. O jogo é executado no terminal e inclui recursos como **interface colorida**, **níveis de dificuldade**, e **sistema de pontuação**.
 
 ---
 
 ## 🎯 Objetivo
-O jogador deve posicionar corretamente as peças que caem do topo da tela para formar linhas horizontais completas e evitar que a pilha de blocos atinja o topo.
+
+O jogador deve abrir todas as células que **não contêm minas** no campo, utilizando pistas numéricas sobre a quantidade de minas nas adjacências. Cuidado: abrir uma mina termina o jogo!
 
 ---
 
 ## 🔁 Regras e Interações
 
 ### 🎮 Comandos do Teclado
-| Tecla | Ação                     |
-|-------|--------------------------|
-| `a`   | Mover peça para a esquerda |
-| `d`   | Mover peça para a direita  |
-| `w`   | Girar peça (sentido horário) |
-| `s`   | Acelerar a queda da peça   |
-| `q`   | Sair do jogo               |
 
-### 💥 Peças Especiais
-- **Explosiva**: destrói blocos ao redor ao ser fixada.
-- **Coringa**: adapta sua forma à posição onde for fixada.
-- **Congeladora**: pausa a queda de novas peças temporariamente.
-
-Essas peças aparecem de forma aleatória e tornam cada partida única e desafiadora.
+| Tecla   | Ação                         |
+| ------- | ---------------------------- |
+| `w`     | Mover cursor para cima       |
+| `s`     | Mover cursor para baixo      |
+| `a`     | Mover cursor para a esquerda |
+| `d`     | Mover cursor para a direita  |
+| `Enter` | Revelar célula               |
+| `f`     | Marcar ou desmarcar bandeira |
+| `q`     | Sair do jogo                 |
 
 ---
 
-## 🏆 Ranking
-Após o fim da partida, o jogador insere seu **nome**, e a pontuação é registrada em um arquivo local (`ranking.txt`). O ranking é exibido antes de cada nova partida.
+## 🧠 Níveis de Dificuldade
+
+* **Fácil**: 8x8 com 10 minas
+* **Médio**: 12x12 com 20 minas
+* **Difícil**: 16x16 com 40 minas
+
+O jogador escolhe o nível ao iniciar o jogo.
 
 ---
 
-## ✨ Efeitos Visuais
-Utilizando a CLI-lib, o jogo apresenta efeitos como:
-- Textos coloridos e piscantes
-- Mensagens especiais ao completar linhas ou ativar peças especiais
-- Animações simples no game over
+## 🏆 Sistema de Pontuação
+
+A pontuação é baseada no número de células abertas corretamente. O tempo de jogo também pode influenciar no ranking final.
 
 ---
 
+## ✨ Recursos Visuais
+
+Aproveitando os recursos da CLI-lib, o jogo apresenta:
+
+* Interface em cores para facilitar a leitura
+* Destaques para minas, bandeiras e áreas seguras
+* Animação simples de **"Game Over"** e **"Vitória!"**
+
+---
 
