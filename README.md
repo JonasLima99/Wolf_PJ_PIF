@@ -1,7 +1,7 @@
 
 # Wolf\_PJ\_PIF
 
-# 🧠 Integrantes do Projeto
+# Integrantes do Projeto
 
 * Leonardo Felipe Demétrio Lins Nascimento
 * Jonas de Lima Neto
@@ -9,13 +9,13 @@
 
 ---
 
-# 📘 Disciplina
+# Disciplina
 
 **Programação Imperativa e Funcional - 2025.1**
 
 ---
 
-# 🏫 Instituição
+# Instituição
 
 **CESAR School**
 
