@@ -44,9 +44,7 @@ void sortear_virus () {
             campo_real[linha][coluna] = 'V';
             contador++;
         }
-
     }
-    
 }
 
 //Agora, preciso criar o painel de visão do jogador, e ele não pode visualizar onde está o vírus...
